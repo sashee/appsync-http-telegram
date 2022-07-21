@@ -1,0 +1,12 @@
+type Mutation {
+	sendMessage(chat_id: String!, message: String!): String!
+}
+
+type Query {
+	me: AWSJSON!
+}
+
+schema {
+	query: Query
+	mutation: Mutation
+}
